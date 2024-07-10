@@ -1,5 +1,5 @@
-"use client";
-
 import { io } from "socket.io-client";
 
-export const socket = io();
+const socket = io("https://gps-sharing-app-codewithsudipta.vercel.app/");
+
+export { socket };
