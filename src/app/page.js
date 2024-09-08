@@ -39,6 +39,7 @@ export default function Home() {
     }
 
     socket.on("recieve-location", (data) => {
+      console.log(data);
       setUserLocations((prevLocations) => {
         const updatedLocations = { ...prevLocations, [data.id]: data };
         if (
